@@ -1,0 +1,1337 @@
+2025-02-15 14:53:20 [127.0.0.1][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: yii\web\Request::cookieValidationKey must be configured with a secret key. in W:\domains\localhost\blog\vendor\yiisoft\yii2\web\Request.php:1723
+Stack trace:
+#0 W:\domains\localhost\blog\vendor\yiisoft\yii2\web\Request.php(1705): yii\web\Request->loadCookies()
+#1 W:\domains\localhost\blog\vendor\yiisoft\yii2\web\User.php(593): yii\web\Request->getCookies()
+#2 W:\domains\localhost\blog\vendor\yiisoft\yii2\web\User.php(321): yii\web\User->getIdentityAndDurationFromCookie()
+#3 W:\domains\localhost\blog\vendor\yiisoft\yii2\web\User.php(727): yii\web\User->loginByCookie()
+#4 W:\domains\localhost\blog\vendor\yiisoft\yii2\web\User.php(199): yii\web\User->renewAuthStatus()
+#5 W:\domains\localhost\blog\vendor\yiisoft\yii2\web\User.php(367): yii\web\User->getIdentity()
+#6 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#7 W:\domains\localhost\blog\vendor\yiisoft\yii2-debug\src\panels\UserPanel.php(83): yii\base\Component->__get()
+#8 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#9 [internal function]: yii\base\BaseObject->__construct()
+#10 W:\domains\localhost\blog\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs()
+#11 W:\domains\localhost\blog\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build()
+#12 W:\domains\localhost\blog\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get()
+#13 W:\domains\localhost\blog\vendor\yiisoft\yii2-debug\src\Module.php(253): yii\BaseYii::createObject()
+#14 W:\domains\localhost\blog\vendor\yiisoft\yii2-debug\src\Module.php(225): yii\debug\Module->initPanels()
+#15 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#16 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Module.php(161): yii\base\BaseObject->__construct()
+#17 [internal function]: yii\base\Module->__construct()
+#18 W:\domains\localhost\blog\vendor\yiisoft\yii2\di\Container.php(411): ReflectionClass->newInstanceArgs()
+#19 W:\domains\localhost\blog\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build()
+#20 W:\domains\localhost\blog\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get()
+#21 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Module.php(445): yii\BaseYii::createObject()
+#22 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Application.php(313): yii\base\Module->getModule()
+#23 W:\domains\localhost\blog\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#24 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Application.php(271): yii\web\Application->bootstrap()
+#25 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#26 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Application.php(204): yii\base\BaseObject->__construct()
+#27 W:\domains\localhost\blog\web\index.php(12): yii\base\Application->__construct()
+#28 {main}
+2025-02-15 14:53:19 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HTTP_HOST' => 'blog'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-GB;q=0.8,en-US;q=0.7'
+    'PATH' => 'w:\\modules\\php\\PHP_8.1\\ext;w:\\modules\\php\\PHP_8.1\\pear;w:\\modules\\php\\PHP_8.1\\pear\\bin;w:\\modules\\php\\PHP_8.1;w:\\modules\\wget\\bin;w:\\modules\\database\\MariaDB-10.3\\bin;w:\\modules\\http\\Apache_2.4-PHP_8.0-8.1+Nginx_1.23\\bin;w:\\modules\\http\\Apache_2.4-PHP_8.0-8.1+Nginx_1.23;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'W:/domains/localhost/blog/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'W:/domains/localhost/blog/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'W:/domains/localhost/blog/web/index.php'
+    'REMOTE_PORT' => '50257'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1739620399.6603
+    'REQUEST_TIME' => 1739620399
+]2025-02-15 16:32:26 [127.0.0.1][-][2e28s43kjg6erav74j8hln7i8935nliv][error][ParseError] ParseError: syntax error, unexpected identifier "ИнфоГрад", expecting "]" in W:\domains\localhost\blog\views\layouts\main.php:35
+Stack trace:
+#0 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#1 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Controller.php(422): yii\base\View->renderFile()
+#2 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Controller.php(408): yii\base\Controller->renderContent()
+#3 W:\domains\localhost\blog\controllers\SiteController.php(64): yii\base\Controller->render()
+#4 [internal function]: app\controllers\SiteController->actionIndex()
+#5 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#6 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#7 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#8 W:\domains\localhost\blog\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#9 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#10 W:\domains\localhost\blog\web\index.php(12): yii\base\Application->run()
+#11 {main}
+2025-02-15 16:32:25 [127.0.0.1][-][2e28s43kjg6erav74j8hln7i8935nliv][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '2e28s43kjg6erav74j8hln7i8935nliv'
+    '_csrf' => '8994b5588c9588a271d7f13a6a17a08a3907c6dfe892d4e823d851e6bd79dcefa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gFbb7VQ6RYiPW9Gu8S_DK4l3715cP88q\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'aijqvaz'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'blog'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_REFERER' => 'http://blog/index.php?r=site%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-GB;q=0.8,en-US;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=2e28s43kjg6erav74j8hln7i8935nliv; _csrf=8994b5588c9588a271d7f13a6a17a08a3907c6dfe892d4e823d851e6bd79dcefa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gFbb7VQ6RYiPW9Gu8S_DK4l3715cP88q%22%3B%7D'
+    'PATH' => 'w:\\modules\\php\\PHP_8.1\\ext;w:\\modules\\php\\PHP_8.1\\pear;w:\\modules\\php\\PHP_8.1\\pear\\bin;w:\\modules\\php\\PHP_8.1;w:\\modules\\wget\\bin;w:\\modules\\database\\MariaDB-10.3\\bin;w:\\modules\\http\\Apache_2.4-PHP_8.0-8.1+Nginx_1.23\\bin;w:\\modules\\http\\Apache_2.4-PHP_8.0-8.1+Nginx_1.23;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'W:/domains/localhost/blog/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'W:/domains/localhost/blog/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'W:/domains/localhost/blog/web/index.php'
+    'REMOTE_PORT' => '55234'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1739626345.7986
+    'REQUEST_TIME' => 1739626345
+]2025-02-15 16:32:55 [127.0.0.1][-][2e28s43kjg6erav74j8hln7i8935nliv][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\bootstrap5\NavBar::0 in W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Component.php:209
+Stack trace:
+#0 W:\domains\localhost\blog\vendor\yiisoft\yii2\BaseYii.php(558): yii\base\Component->__set()
+#1 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure()
+#2 [internal function]: yii\base\BaseObject->__construct()
+#3 W:\domains\localhost\blog\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs()
+#4 W:\domains\localhost\blog\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build()
+#5 W:\domains\localhost\blog\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get()
+#6 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Widget.php(89): yii\BaseYii::createObject()
+#7 W:\domains\localhost\blog\views\layouts\main.php(35): yii\base\Widget::begin()
+#8 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\View.php(347): require('W:\\domains\\loca...')
+#9 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#10 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Controller.php(422): yii\base\View->renderFile()
+#11 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Controller.php(408): yii\base\Controller->renderContent()
+#12 W:\domains\localhost\blog\controllers\SiteController.php(64): yii\base\Controller->render()
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#15 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#16 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#17 W:\domains\localhost\blog\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#18 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#19 W:\domains\localhost\blog\web\index.php(12): yii\base\Application->run()
+#20 {main}
+2025-02-15 16:32:55 [127.0.0.1][-][2e28s43kjg6erav74j8hln7i8935nliv][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '2e28s43kjg6erav74j8hln7i8935nliv'
+    '_csrf' => '8994b5588c9588a271d7f13a6a17a08a3907c6dfe892d4e823d851e6bd79dcefa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gFbb7VQ6RYiPW9Gu8S_DK4l3715cP88q\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'aijqvaz'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'blog'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_REFERER' => 'http://blog/index.php?r=site%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-GB;q=0.8,en-US;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=2e28s43kjg6erav74j8hln7i8935nliv; _csrf=8994b5588c9588a271d7f13a6a17a08a3907c6dfe892d4e823d851e6bd79dcefa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gFbb7VQ6RYiPW9Gu8S_DK4l3715cP88q%22%3B%7D'
+    'PATH' => 'w:\\modules\\php\\PHP_8.1\\ext;w:\\modules\\php\\PHP_8.1\\pear;w:\\modules\\php\\PHP_8.1\\pear\\bin;w:\\modules\\php\\PHP_8.1;w:\\modules\\wget\\bin;w:\\modules\\database\\MariaDB-10.3\\bin;w:\\modules\\http\\Apache_2.4-PHP_8.0-8.1+Nginx_1.23\\bin;w:\\modules\\http\\Apache_2.4-PHP_8.0-8.1+Nginx_1.23;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'W:/domains/localhost/blog/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'W:/domains/localhost/blog/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'W:/domains/localhost/blog/web/index.php'
+    'REMOTE_PORT' => '55242'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1739626375.9074
+    'REQUEST_TIME' => 1739626375
+]2025-02-15 16:32:56 [127.0.0.1][-][2e28s43kjg6erav74j8hln7i8935nliv][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\bootstrap5\NavBar::0 in W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Component.php:209
+Stack trace:
+#0 W:\domains\localhost\blog\vendor\yiisoft\yii2\BaseYii.php(558): yii\base\Component->__set()
+#1 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure()
+#2 [internal function]: yii\base\BaseObject->__construct()
+#3 W:\domains\localhost\blog\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs()
+#4 W:\domains\localhost\blog\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build()
+#5 W:\domains\localhost\blog\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get()
+#6 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Widget.php(89): yii\BaseYii::createObject()
+#7 W:\domains\localhost\blog\views\layouts\main.php(35): yii\base\Widget::begin()
+#8 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\View.php(347): require('W:\\domains\\loca...')
+#9 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#10 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Controller.php(422): yii\base\View->renderFile()
+#11 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Controller.php(408): yii\base\Controller->renderContent()
+#12 W:\domains\localhost\blog\controllers\SiteController.php(64): yii\base\Controller->render()
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#15 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#16 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#17 W:\domains\localhost\blog\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#18 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#19 W:\domains\localhost\blog\web\index.php(12): yii\base\Application->run()
+#20 {main}
+2025-02-15 16:32:56 [127.0.0.1][-][2e28s43kjg6erav74j8hln7i8935nliv][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '2e28s43kjg6erav74j8hln7i8935nliv'
+    '_csrf' => '8994b5588c9588a271d7f13a6a17a08a3907c6dfe892d4e823d851e6bd79dcefa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gFbb7VQ6RYiPW9Gu8S_DK4l3715cP88q\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'aijqvaz'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'blog'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_REFERER' => 'http://blog/index.php?r=site%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-GB;q=0.8,en-US;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=2e28s43kjg6erav74j8hln7i8935nliv; _csrf=8994b5588c9588a271d7f13a6a17a08a3907c6dfe892d4e823d851e6bd79dcefa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gFbb7VQ6RYiPW9Gu8S_DK4l3715cP88q%22%3B%7D'
+    'PATH' => 'w:\\modules\\php\\PHP_8.1\\ext;w:\\modules\\php\\PHP_8.1\\pear;w:\\modules\\php\\PHP_8.1\\pear\\bin;w:\\modules\\php\\PHP_8.1;w:\\modules\\wget\\bin;w:\\modules\\database\\MariaDB-10.3\\bin;w:\\modules\\http\\Apache_2.4-PHP_8.0-8.1+Nginx_1.23\\bin;w:\\modules\\http\\Apache_2.4-PHP_8.0-8.1+Nginx_1.23;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'W:/domains/localhost/blog/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'W:/domains/localhost/blog/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'W:/domains/localhost/blog/web/index.php'
+    'REMOTE_PORT' => '55246'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1739626376.7326
+    'REQUEST_TIME' => 1739626376
+]2025-02-15 16:33:37 [127.0.0.1][-][2e28s43kjg6erav74j8hln7i8935nliv][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\bootstrap5\NavBar::0 in W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Component.php:209
+Stack trace:
+#0 W:\domains\localhost\blog\vendor\yiisoft\yii2\BaseYii.php(558): yii\base\Component->__set()
+#1 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure()
+#2 [internal function]: yii\base\BaseObject->__construct()
+#3 W:\domains\localhost\blog\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs()
+#4 W:\domains\localhost\blog\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build()
+#5 W:\domains\localhost\blog\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get()
+#6 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Widget.php(89): yii\BaseYii::createObject()
+#7 W:\domains\localhost\blog\views\layouts\main.php(35): yii\base\Widget::begin()
+#8 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\View.php(347): require('W:\\domains\\loca...')
+#9 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#10 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Controller.php(422): yii\base\View->renderFile()
+#11 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Controller.php(408): yii\base\Controller->renderContent()
+#12 W:\domains\localhost\blog\controllers\SiteController.php(64): yii\base\Controller->render()
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#15 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#16 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#17 W:\domains\localhost\blog\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#18 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#19 W:\domains\localhost\blog\web\index.php(12): yii\base\Application->run()
+#20 {main}
+2025-02-15 16:33:37 [127.0.0.1][-][2e28s43kjg6erav74j8hln7i8935nliv][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '2e28s43kjg6erav74j8hln7i8935nliv'
+    '_csrf' => '8994b5588c9588a271d7f13a6a17a08a3907c6dfe892d4e823d851e6bd79dcefa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gFbb7VQ6RYiPW9Gu8S_DK4l3715cP88q\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'aijqvaz'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'blog'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_REFERER' => 'http://blog/index.php?r=site%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-GB;q=0.8,en-US;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=2e28s43kjg6erav74j8hln7i8935nliv; _csrf=8994b5588c9588a271d7f13a6a17a08a3907c6dfe892d4e823d851e6bd79dcefa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gFbb7VQ6RYiPW9Gu8S_DK4l3715cP88q%22%3B%7D'
+    'PATH' => 'w:\\modules\\php\\PHP_8.1\\ext;w:\\modules\\php\\PHP_8.1\\pear;w:\\modules\\php\\PHP_8.1\\pear\\bin;w:\\modules\\php\\PHP_8.1;w:\\modules\\wget\\bin;w:\\modules\\database\\MariaDB-10.3\\bin;w:\\modules\\http\\Apache_2.4-PHP_8.0-8.1+Nginx_1.23\\bin;w:\\modules\\http\\Apache_2.4-PHP_8.0-8.1+Nginx_1.23;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'W:/domains/localhost/blog/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'W:/domains/localhost/blog/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'W:/domains/localhost/blog/web/index.php'
+    'REMOTE_PORT' => '55249'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1739626417.066
+    'REQUEST_TIME' => 1739626417
+]2025-02-15 16:33:37 [127.0.0.1][-][2e28s43kjg6erav74j8hln7i8935nliv][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\bootstrap5\NavBar::0 in W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Component.php:209
+Stack trace:
+#0 W:\domains\localhost\blog\vendor\yiisoft\yii2\BaseYii.php(558): yii\base\Component->__set()
+#1 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure()
+#2 [internal function]: yii\base\BaseObject->__construct()
+#3 W:\domains\localhost\blog\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs()
+#4 W:\domains\localhost\blog\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build()
+#5 W:\domains\localhost\blog\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get()
+#6 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Widget.php(89): yii\BaseYii::createObject()
+#7 W:\domains\localhost\blog\views\layouts\main.php(35): yii\base\Widget::begin()
+#8 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\View.php(347): require('W:\\domains\\loca...')
+#9 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#10 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Controller.php(422): yii\base\View->renderFile()
+#11 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Controller.php(408): yii\base\Controller->renderContent()
+#12 W:\domains\localhost\blog\controllers\SiteController.php(64): yii\base\Controller->render()
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#15 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#16 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#17 W:\domains\localhost\blog\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#18 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#19 W:\domains\localhost\blog\web\index.php(12): yii\base\Application->run()
+#20 {main}
+2025-02-15 16:33:37 [127.0.0.1][-][2e28s43kjg6erav74j8hln7i8935nliv][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '2e28s43kjg6erav74j8hln7i8935nliv'
+    '_csrf' => '8994b5588c9588a271d7f13a6a17a08a3907c6dfe892d4e823d851e6bd79dcefa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gFbb7VQ6RYiPW9Gu8S_DK4l3715cP88q\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'aijqvaz'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'blog'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_REFERER' => 'http://blog/index.php?r=site%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-GB;q=0.8,en-US;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=2e28s43kjg6erav74j8hln7i8935nliv; _csrf=8994b5588c9588a271d7f13a6a17a08a3907c6dfe892d4e823d851e6bd79dcefa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gFbb7VQ6RYiPW9Gu8S_DK4l3715cP88q%22%3B%7D'
+    'PATH' => 'w:\\modules\\php\\PHP_8.1\\ext;w:\\modules\\php\\PHP_8.1\\pear;w:\\modules\\php\\PHP_8.1\\pear\\bin;w:\\modules\\php\\PHP_8.1;w:\\modules\\wget\\bin;w:\\modules\\database\\MariaDB-10.3\\bin;w:\\modules\\http\\Apache_2.4-PHP_8.0-8.1+Nginx_1.23\\bin;w:\\modules\\http\\Apache_2.4-PHP_8.0-8.1+Nginx_1.23;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'W:/domains/localhost/blog/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'W:/domains/localhost/blog/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'W:/domains/localhost/blog/web/index.php'
+    'REMOTE_PORT' => '55253'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1739626417.7407
+    'REQUEST_TIME' => 1739626417
+]2025-02-15 16:33:38 [127.0.0.1][-][2e28s43kjg6erav74j8hln7i8935nliv][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\bootstrap5\NavBar::0 in W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Component.php:209
+Stack trace:
+#0 W:\domains\localhost\blog\vendor\yiisoft\yii2\BaseYii.php(558): yii\base\Component->__set()
+#1 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure()
+#2 [internal function]: yii\base\BaseObject->__construct()
+#3 W:\domains\localhost\blog\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs()
+#4 W:\domains\localhost\blog\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build()
+#5 W:\domains\localhost\blog\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get()
+#6 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Widget.php(89): yii\BaseYii::createObject()
+#7 W:\domains\localhost\blog\views\layouts\main.php(35): yii\base\Widget::begin()
+#8 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\View.php(347): require('W:\\domains\\loca...')
+#9 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#10 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Controller.php(422): yii\base\View->renderFile()
+#11 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Controller.php(408): yii\base\Controller->renderContent()
+#12 W:\domains\localhost\blog\controllers\SiteController.php(64): yii\base\Controller->render()
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#15 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#16 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#17 W:\domains\localhost\blog\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#18 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#19 W:\domains\localhost\blog\web\index.php(12): yii\base\Application->run()
+#20 {main}
+2025-02-15 16:33:38 [127.0.0.1][-][2e28s43kjg6erav74j8hln7i8935nliv][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '2e28s43kjg6erav74j8hln7i8935nliv'
+    '_csrf' => '8994b5588c9588a271d7f13a6a17a08a3907c6dfe892d4e823d851e6bd79dcefa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gFbb7VQ6RYiPW9Gu8S_DK4l3715cP88q\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'aijqvaz'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'blog'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_REFERER' => 'http://blog/index.php?r=site%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-GB;q=0.8,en-US;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=2e28s43kjg6erav74j8hln7i8935nliv; _csrf=8994b5588c9588a271d7f13a6a17a08a3907c6dfe892d4e823d851e6bd79dcefa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gFbb7VQ6RYiPW9Gu8S_DK4l3715cP88q%22%3B%7D'
+    'PATH' => 'w:\\modules\\php\\PHP_8.1\\ext;w:\\modules\\php\\PHP_8.1\\pear;w:\\modules\\php\\PHP_8.1\\pear\\bin;w:\\modules\\php\\PHP_8.1;w:\\modules\\wget\\bin;w:\\modules\\database\\MariaDB-10.3\\bin;w:\\modules\\http\\Apache_2.4-PHP_8.0-8.1+Nginx_1.23\\bin;w:\\modules\\http\\Apache_2.4-PHP_8.0-8.1+Nginx_1.23;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'W:/domains/localhost/blog/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'W:/domains/localhost/blog/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'W:/domains/localhost/blog/web/index.php'
+    'REMOTE_PORT' => '55256'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1739626418.2044
+    'REQUEST_TIME' => 1739626418
+]2025-02-15 16:33:38 [127.0.0.1][-][2e28s43kjg6erav74j8hln7i8935nliv][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\bootstrap5\NavBar::0 in W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Component.php:209
+Stack trace:
+#0 W:\domains\localhost\blog\vendor\yiisoft\yii2\BaseYii.php(558): yii\base\Component->__set()
+#1 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure()
+#2 [internal function]: yii\base\BaseObject->__construct()
+#3 W:\domains\localhost\blog\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs()
+#4 W:\domains\localhost\blog\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build()
+#5 W:\domains\localhost\blog\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get()
+#6 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Widget.php(89): yii\BaseYii::createObject()
+#7 W:\domains\localhost\blog\views\layouts\main.php(35): yii\base\Widget::begin()
+#8 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\View.php(347): require('W:\\domains\\loca...')
+#9 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#10 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Controller.php(422): yii\base\View->renderFile()
+#11 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Controller.php(408): yii\base\Controller->renderContent()
+#12 W:\domains\localhost\blog\controllers\SiteController.php(64): yii\base\Controller->render()
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#15 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#16 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#17 W:\domains\localhost\blog\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#18 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#19 W:\domains\localhost\blog\web\index.php(12): yii\base\Application->run()
+#20 {main}
+2025-02-15 16:33:38 [127.0.0.1][-][2e28s43kjg6erav74j8hln7i8935nliv][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '2e28s43kjg6erav74j8hln7i8935nliv'
+    '_csrf' => '8994b5588c9588a271d7f13a6a17a08a3907c6dfe892d4e823d851e6bd79dcefa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gFbb7VQ6RYiPW9Gu8S_DK4l3715cP88q\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'aijqvaz'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'blog'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_REFERER' => 'http://blog/index.php?r=site%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-GB;q=0.8,en-US;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=2e28s43kjg6erav74j8hln7i8935nliv; _csrf=8994b5588c9588a271d7f13a6a17a08a3907c6dfe892d4e823d851e6bd79dcefa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gFbb7VQ6RYiPW9Gu8S_DK4l3715cP88q%22%3B%7D'
+    'PATH' => 'w:\\modules\\php\\PHP_8.1\\ext;w:\\modules\\php\\PHP_8.1\\pear;w:\\modules\\php\\PHP_8.1\\pear\\bin;w:\\modules\\php\\PHP_8.1;w:\\modules\\wget\\bin;w:\\modules\\database\\MariaDB-10.3\\bin;w:\\modules\\http\\Apache_2.4-PHP_8.0-8.1+Nginx_1.23\\bin;w:\\modules\\http\\Apache_2.4-PHP_8.0-8.1+Nginx_1.23;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'W:/domains/localhost/blog/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'W:/domains/localhost/blog/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'W:/domains/localhost/blog/web/index.php'
+    'REMOTE_PORT' => '55259'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1739626418.3878
+    'REQUEST_TIME' => 1739626418
+]2025-02-15 16:33:38 [127.0.0.1][-][2e28s43kjg6erav74j8hln7i8935nliv][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\bootstrap5\NavBar::0 in W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Component.php:209
+Stack trace:
+#0 W:\domains\localhost\blog\vendor\yiisoft\yii2\BaseYii.php(558): yii\base\Component->__set()
+#1 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure()
+#2 [internal function]: yii\base\BaseObject->__construct()
+#3 W:\domains\localhost\blog\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs()
+#4 W:\domains\localhost\blog\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build()
+#5 W:\domains\localhost\blog\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get()
+#6 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Widget.php(89): yii\BaseYii::createObject()
+#7 W:\domains\localhost\blog\views\layouts\main.php(35): yii\base\Widget::begin()
+#8 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\View.php(347): require('W:\\domains\\loca...')
+#9 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#10 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Controller.php(422): yii\base\View->renderFile()
+#11 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Controller.php(408): yii\base\Controller->renderContent()
+#12 W:\domains\localhost\blog\controllers\SiteController.php(64): yii\base\Controller->render()
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#15 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#16 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#17 W:\domains\localhost\blog\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#18 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#19 W:\domains\localhost\blog\web\index.php(12): yii\base\Application->run()
+#20 {main}
+2025-02-15 16:33:38 [127.0.0.1][-][2e28s43kjg6erav74j8hln7i8935nliv][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '2e28s43kjg6erav74j8hln7i8935nliv'
+    '_csrf' => '8994b5588c9588a271d7f13a6a17a08a3907c6dfe892d4e823d851e6bd79dcefa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gFbb7VQ6RYiPW9Gu8S_DK4l3715cP88q\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'aijqvaz'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'blog'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_REFERER' => 'http://blog/index.php?r=site%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-GB;q=0.8,en-US;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=2e28s43kjg6erav74j8hln7i8935nliv; _csrf=8994b5588c9588a271d7f13a6a17a08a3907c6dfe892d4e823d851e6bd79dcefa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gFbb7VQ6RYiPW9Gu8S_DK4l3715cP88q%22%3B%7D'
+    'PATH' => 'w:\\modules\\php\\PHP_8.1\\ext;w:\\modules\\php\\PHP_8.1\\pear;w:\\modules\\php\\PHP_8.1\\pear\\bin;w:\\modules\\php\\PHP_8.1;w:\\modules\\wget\\bin;w:\\modules\\database\\MariaDB-10.3\\bin;w:\\modules\\http\\Apache_2.4-PHP_8.0-8.1+Nginx_1.23\\bin;w:\\modules\\http\\Apache_2.4-PHP_8.0-8.1+Nginx_1.23;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'W:/domains/localhost/blog/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'W:/domains/localhost/blog/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'W:/domains/localhost/blog/web/index.php'
+    'REMOTE_PORT' => '55262'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1739626418.5147
+    'REQUEST_TIME' => 1739626418
+]2025-02-15 16:33:38 [127.0.0.1][-][2e28s43kjg6erav74j8hln7i8935nliv][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\bootstrap5\NavBar::0 in W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Component.php:209
+Stack trace:
+#0 W:\domains\localhost\blog\vendor\yiisoft\yii2\BaseYii.php(558): yii\base\Component->__set()
+#1 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure()
+#2 [internal function]: yii\base\BaseObject->__construct()
+#3 W:\domains\localhost\blog\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs()
+#4 W:\domains\localhost\blog\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build()
+#5 W:\domains\localhost\blog\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get()
+#6 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Widget.php(89): yii\BaseYii::createObject()
+#7 W:\domains\localhost\blog\views\layouts\main.php(35): yii\base\Widget::begin()
+#8 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\View.php(347): require('W:\\domains\\loca...')
+#9 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#10 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Controller.php(422): yii\base\View->renderFile()
+#11 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Controller.php(408): yii\base\Controller->renderContent()
+#12 W:\domains\localhost\blog\controllers\SiteController.php(64): yii\base\Controller->render()
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#15 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#16 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#17 W:\domains\localhost\blog\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#18 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#19 W:\domains\localhost\blog\web\index.php(12): yii\base\Application->run()
+#20 {main}
+2025-02-15 16:33:38 [127.0.0.1][-][2e28s43kjg6erav74j8hln7i8935nliv][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '2e28s43kjg6erav74j8hln7i8935nliv'
+    '_csrf' => '8994b5588c9588a271d7f13a6a17a08a3907c6dfe892d4e823d851e6bd79dcefa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gFbb7VQ6RYiPW9Gu8S_DK4l3715cP88q\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'aijqvaz'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'blog'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_REFERER' => 'http://blog/index.php?r=site%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-GB;q=0.8,en-US;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=2e28s43kjg6erav74j8hln7i8935nliv; _csrf=8994b5588c9588a271d7f13a6a17a08a3907c6dfe892d4e823d851e6bd79dcefa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gFbb7VQ6RYiPW9Gu8S_DK4l3715cP88q%22%3B%7D'
+    'PATH' => 'w:\\modules\\php\\PHP_8.1\\ext;w:\\modules\\php\\PHP_8.1\\pear;w:\\modules\\php\\PHP_8.1\\pear\\bin;w:\\modules\\php\\PHP_8.1;w:\\modules\\wget\\bin;w:\\modules\\database\\MariaDB-10.3\\bin;w:\\modules\\http\\Apache_2.4-PHP_8.0-8.1+Nginx_1.23\\bin;w:\\modules\\http\\Apache_2.4-PHP_8.0-8.1+Nginx_1.23;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'W:/domains/localhost/blog/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'W:/domains/localhost/blog/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'W:/domains/localhost/blog/web/index.php'
+    'REMOTE_PORT' => '55265'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1739626418.6665
+    'REQUEST_TIME' => 1739626418
+]2025-02-15 16:33:38 [127.0.0.1][-][2e28s43kjg6erav74j8hln7i8935nliv][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\bootstrap5\NavBar::0 in W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Component.php:209
+Stack trace:
+#0 W:\domains\localhost\blog\vendor\yiisoft\yii2\BaseYii.php(558): yii\base\Component->__set()
+#1 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure()
+#2 [internal function]: yii\base\BaseObject->__construct()
+#3 W:\domains\localhost\blog\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs()
+#4 W:\domains\localhost\blog\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build()
+#5 W:\domains\localhost\blog\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get()
+#6 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Widget.php(89): yii\BaseYii::createObject()
+#7 W:\domains\localhost\blog\views\layouts\main.php(35): yii\base\Widget::begin()
+#8 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\View.php(347): require('W:\\domains\\loca...')
+#9 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#10 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Controller.php(422): yii\base\View->renderFile()
+#11 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Controller.php(408): yii\base\Controller->renderContent()
+#12 W:\domains\localhost\blog\controllers\SiteController.php(64): yii\base\Controller->render()
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#15 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#16 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#17 W:\domains\localhost\blog\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#18 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#19 W:\domains\localhost\blog\web\index.php(12): yii\base\Application->run()
+#20 {main}
+2025-02-15 16:33:38 [127.0.0.1][-][2e28s43kjg6erav74j8hln7i8935nliv][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '2e28s43kjg6erav74j8hln7i8935nliv'
+    '_csrf' => '8994b5588c9588a271d7f13a6a17a08a3907c6dfe892d4e823d851e6bd79dcefa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gFbb7VQ6RYiPW9Gu8S_DK4l3715cP88q\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'aijqvaz'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'blog'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_REFERER' => 'http://blog/index.php?r=site%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-GB;q=0.8,en-US;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=2e28s43kjg6erav74j8hln7i8935nliv; _csrf=8994b5588c9588a271d7f13a6a17a08a3907c6dfe892d4e823d851e6bd79dcefa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gFbb7VQ6RYiPW9Gu8S_DK4l3715cP88q%22%3B%7D'
+    'PATH' => 'w:\\modules\\php\\PHP_8.1\\ext;w:\\modules\\php\\PHP_8.1\\pear;w:\\modules\\php\\PHP_8.1\\pear\\bin;w:\\modules\\php\\PHP_8.1;w:\\modules\\wget\\bin;w:\\modules\\database\\MariaDB-10.3\\bin;w:\\modules\\http\\Apache_2.4-PHP_8.0-8.1+Nginx_1.23\\bin;w:\\modules\\http\\Apache_2.4-PHP_8.0-8.1+Nginx_1.23;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'W:/domains/localhost/blog/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'W:/domains/localhost/blog/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'W:/domains/localhost/blog/web/index.php'
+    'REMOTE_PORT' => '55268'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1739626418.7531
+    'REQUEST_TIME' => 1739626418
+]2025-02-15 16:33:38 [127.0.0.1][-][2e28s43kjg6erav74j8hln7i8935nliv][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\bootstrap5\NavBar::0 in W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Component.php:209
+Stack trace:
+#0 W:\domains\localhost\blog\vendor\yiisoft\yii2\BaseYii.php(558): yii\base\Component->__set()
+#1 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure()
+#2 [internal function]: yii\base\BaseObject->__construct()
+#3 W:\domains\localhost\blog\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs()
+#4 W:\domains\localhost\blog\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build()
+#5 W:\domains\localhost\blog\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get()
+#6 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Widget.php(89): yii\BaseYii::createObject()
+#7 W:\domains\localhost\blog\views\layouts\main.php(35): yii\base\Widget::begin()
+#8 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\View.php(347): require('W:\\domains\\loca...')
+#9 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#10 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Controller.php(422): yii\base\View->renderFile()
+#11 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Controller.php(408): yii\base\Controller->renderContent()
+#12 W:\domains\localhost\blog\controllers\SiteController.php(64): yii\base\Controller->render()
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#15 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#16 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#17 W:\domains\localhost\blog\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#18 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#19 W:\domains\localhost\blog\web\index.php(12): yii\base\Application->run()
+#20 {main}
+2025-02-15 16:33:38 [127.0.0.1][-][2e28s43kjg6erav74j8hln7i8935nliv][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '2e28s43kjg6erav74j8hln7i8935nliv'
+    '_csrf' => '8994b5588c9588a271d7f13a6a17a08a3907c6dfe892d4e823d851e6bd79dcefa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gFbb7VQ6RYiPW9Gu8S_DK4l3715cP88q\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'aijqvaz'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'blog'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_REFERER' => 'http://blog/index.php?r=site%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-GB;q=0.8,en-US;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=2e28s43kjg6erav74j8hln7i8935nliv; _csrf=8994b5588c9588a271d7f13a6a17a08a3907c6dfe892d4e823d851e6bd79dcefa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gFbb7VQ6RYiPW9Gu8S_DK4l3715cP88q%22%3B%7D'
+    'PATH' => 'w:\\modules\\php\\PHP_8.1\\ext;w:\\modules\\php\\PHP_8.1\\pear;w:\\modules\\php\\PHP_8.1\\pear\\bin;w:\\modules\\php\\PHP_8.1;w:\\modules\\wget\\bin;w:\\modules\\database\\MariaDB-10.3\\bin;w:\\modules\\http\\Apache_2.4-PHP_8.0-8.1+Nginx_1.23\\bin;w:\\modules\\http\\Apache_2.4-PHP_8.0-8.1+Nginx_1.23;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'W:/domains/localhost/blog/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'W:/domains/localhost/blog/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'W:/domains/localhost/blog/web/index.php'
+    'REMOTE_PORT' => '55271'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1739626418.8532
+    'REQUEST_TIME' => 1739626418
+]2025-02-19 12:02:14 [127.0.0.1][-][l3d7la2t0g6kla3ldo6msnt5rj1r13kv][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'yii2basic' in W:\domains\localhost\blog\vendor\yiisoft\yii2\db\Connection.php:722
+Stack trace:
+#0 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\Connection.php(722): PDO->__construct()
+#1 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#3 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo()
+#5 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\Command.php(1181): yii\db\Command->prepare()
+#6 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\Command.php(417): yii\db\Command->queryInternal()
+#7 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\mysql\Schema.php(328): yii\db\Command->queryAll()
+#8 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\mysql\Schema.php(133): yii\db\mysql\Schema->findColumns()
+#9 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#10 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata()
+#11 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\ActiveRecord.php(439): yii\db\Schema->getTableSchema()
+#12 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\ActiveRecord.php(473): yii\db\ActiveRecord::getTableSchema()
+#13 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\BaseActiveRecord.php(498): yii\db\ActiveRecord->attributes()
+#14 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\BaseActiveRecord.php(313): yii\db\BaseActiveRecord->hasAttribute()
+#15 W:\domains\localhost\blog\models\RegisterForm.php(67): yii\db\BaseActiveRecord->__set()
+#16 W:\domains\localhost\blog\controllers\SiteController.php(96): app\models\RegisterForm->register()
+#17 [internal function]: app\controllers\SiteController->actionRegister()
+#18 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#19 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#20 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#21 W:\domains\localhost\blog\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#22 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#23 W:\domains\localhost\blog\web\index.php(12): yii\base\Application->run()
+#24 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'yii2basic' in W:\domains\localhost\blog\vendor\yiisoft\yii2\db\Connection.php:648
+Stack trace:
+#0 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#1 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo()
+#3 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\Command.php(1181): yii\db\Command->prepare()
+#4 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\Command.php(417): yii\db\Command->queryInternal()
+#5 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\mysql\Schema.php(328): yii\db\Command->queryAll()
+#6 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\mysql\Schema.php(133): yii\db\mysql\Schema->findColumns()
+#7 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#8 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata()
+#9 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\ActiveRecord.php(439): yii\db\Schema->getTableSchema()
+#10 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\ActiveRecord.php(473): yii\db\ActiveRecord::getTableSchema()
+#11 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\BaseActiveRecord.php(498): yii\db\ActiveRecord->attributes()
+#12 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\BaseActiveRecord.php(313): yii\db\BaseActiveRecord->hasAttribute()
+#13 W:\domains\localhost\blog\models\RegisterForm.php(67): yii\db\BaseActiveRecord->__set()
+#14 W:\domains\localhost\blog\controllers\SiteController.php(96): app\models\RegisterForm->register()
+#15 [internal function]: app\controllers\SiteController->actionRegister()
+#16 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#17 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#18 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#19 W:\domains\localhost\blog\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#20 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#21 W:\domains\localhost\blog\web\index.php(12): yii\base\Application->run()
+#22 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1049
+    [2] => Unknown database 'yii2basic'
+)
+
+2025-02-19 12:02:14 [127.0.0.1][-][l3d7la2t0g6kla3ldo6msnt5rj1r13kv][info][application] $_GET = [
+    'r' => 'site/register'
+]
+
+$_POST = [
+    '_csrf' => 'OJpPr3PdntWor9f0nSIDgGuOeBfXQpTqEJyUzXYv0S5-9RjiN-3Nhc7ZnIWtVGLlCfpOf-Is2pBk0qe9A2KEHg=='
+    'RegisterForm' => [
+        'username' => '123'
+        'password' => '123'
+        'password_repeat' => '123'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'l3d7la2t0g6kla3ldo6msnt5rj1r13kv'
+    '_csrf' => '7f6e06ac9a130ac89b9726366925f584a491a57ada4af44c2c03a82b61a805bea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FoWMD0SPfvKq0vaebt6h5nNztN3puMU0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'blog'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'CONTENT_LENGTH' => '274'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://blog'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_REFERER' => 'http://blog/index.php?r=site%2Fregister'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-GB;q=0.8,en-US;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=l3d7la2t0g6kla3ldo6msnt5rj1r13kv; _csrf=7f6e06ac9a130ac89b9726366925f584a491a57ada4af44c2c03a82b61a805bea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FoWMD0SPfvKq0vaebt6h5nNztN3puMU0%22%3B%7D'
+    'PATH' => 'w:\\modules\\php\\PHP_8.1\\ext;w:\\modules\\php\\PHP_8.1\\pear;w:\\modules\\php\\PHP_8.1\\pear\\bin;w:\\modules\\php\\PHP_8.1;w:\\modules\\wget\\bin;w:\\modules\\database\\MariaDB-10.3\\bin;w:\\modules\\http\\Apache_2.4-PHP_8.0-8.1+Nginx_1.23\\bin;w:\\modules\\http\\Apache_2.4-PHP_8.0-8.1+Nginx_1.23;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'W:/domains/localhost/blog/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'W:/domains/localhost/blog/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'W:/domains/localhost/blog/web/index.php'
+    'REMOTE_PORT' => '55725'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fregister'
+    'REQUEST_URI' => '/index.php?r=site%2Fregister'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1739955734.7508
+    'REQUEST_TIME' => 1739955734
+]2025-02-19 12:02:31 [127.0.0.1][-][l3d7la2t0g6kla3ldo6msnt5rj1r13kv][error][yii\db\Exception] PDOException: SQLSTATE[HY000]: General error: 1364 Field 'role' doesn't have a default value in W:\domains\localhost\blog\vendor\yiisoft\yii2\db\Command.php:1320
+Stack trace:
+#0 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\Command.php(1320): PDOStatement->execute()
+#1 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\Command.php(1120): yii\db\Command->internalExecute()
+#2 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\Schema.php(431): yii\db\Command->execute()
+#3 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\ActiveRecord.php(604): yii\db\Schema->insert()
+#4 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\ActiveRecord.php(570): yii\db\ActiveRecord->insertInternal()
+#5 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\BaseActiveRecord.php(687): yii\db\ActiveRecord->insert()
+#6 W:\domains\localhost\blog\models\RegisterForm.php(70): yii\db\BaseActiveRecord->save()
+#7 W:\domains\localhost\blog\controllers\SiteController.php(96): app\models\RegisterForm->register()
+#8 [internal function]: app\controllers\SiteController->actionRegister()
+#9 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#10 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#11 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#12 W:\domains\localhost\blog\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#13 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#14 W:\domains\localhost\blog\web\index.php(12): yii\base\Application->run()
+#15 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000]: General error: 1364 Field 'role' doesn't have a default value
+The SQL being executed was: INSERT INTO `user` (`username`, `password`) VALUES ('123', '$2y$13$YZxHEyN3.I2b5zr9dRQK0O70d7JTxglVENCJsyBLoB1U6kjTEvPeS') in W:\domains\localhost\blog\vendor\yiisoft\yii2\db\Schema.php:676
+Stack trace:
+#0 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\Command.php(1325): yii\db\Schema->convertException()
+#1 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\Command.php(1120): yii\db\Command->internalExecute()
+#2 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\Schema.php(431): yii\db\Command->execute()
+#3 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\ActiveRecord.php(604): yii\db\Schema->insert()
+#4 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\ActiveRecord.php(570): yii\db\ActiveRecord->insertInternal()
+#5 W:\domains\localhost\blog\vendor\yiisoft\yii2\db\BaseActiveRecord.php(687): yii\db\ActiveRecord->insert()
+#6 W:\domains\localhost\blog\models\RegisterForm.php(70): yii\db\BaseActiveRecord->save()
+#7 W:\domains\localhost\blog\controllers\SiteController.php(96): app\models\RegisterForm->register()
+#8 [internal function]: app\controllers\SiteController->actionRegister()
+#9 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#10 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#11 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#12 W:\domains\localhost\blog\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#13 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#14 W:\domains\localhost\blog\web\index.php(12): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1364
+    [2] => Field 'role' doesn't have a default value
+)
+
+2025-02-19 12:02:30 [127.0.0.1][-][l3d7la2t0g6kla3ldo6msnt5rj1r13kv][info][application] $_GET = [
+    'r' => 'site/register'
+]
+
+$_POST = [
+    '_csrf' => 'OJpPr3PdntWor9f0nSIDgGuOeBfXQpTqEJyUzXYv0S5-9RjiN-3Nhc7ZnIWtVGLlCfpOf-Is2pBk0qe9A2KEHg=='
+    'RegisterForm' => [
+        'username' => '123'
+        'password' => '123'
+        'password_repeat' => '123'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'l3d7la2t0g6kla3ldo6msnt5rj1r13kv'
+    '_csrf' => '7f6e06ac9a130ac89b9726366925f584a491a57ada4af44c2c03a82b61a805bea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FoWMD0SPfvKq0vaebt6h5nNztN3puMU0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'blog'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'CONTENT_LENGTH' => '274'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0'
+    'HTTP_ORIGIN' => 'http://blog'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_REFERER' => 'http://blog/index.php?r=site%2Fregister'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-GB;q=0.8,en-US;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=l3d7la2t0g6kla3ldo6msnt5rj1r13kv; _csrf=7f6e06ac9a130ac89b9726366925f584a491a57ada4af44c2c03a82b61a805bea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FoWMD0SPfvKq0vaebt6h5nNztN3puMU0%22%3B%7D'
+    'PATH' => 'w:\\modules\\php\\PHP_8.1\\ext;w:\\modules\\php\\PHP_8.1\\pear;w:\\modules\\php\\PHP_8.1\\pear\\bin;w:\\modules\\php\\PHP_8.1;w:\\modules\\wget\\bin;w:\\modules\\database\\MariaDB-10.3\\bin;w:\\modules\\http\\Apache_2.4-PHP_8.0-8.1+Nginx_1.23\\bin;w:\\modules\\http\\Apache_2.4-PHP_8.0-8.1+Nginx_1.23;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'W:/domains/localhost/blog/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'W:/domains/localhost/blog/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'W:/domains/localhost/blog/web/index.php'
+    'REMOTE_PORT' => '55796'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fregister'
+    'REQUEST_URI' => '/index.php?r=site%2Fregister'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1739955750.5049
+    'REQUEST_TIME' => 1739955750
+]2025-02-19 12:03:01 [127.0.0.1][-][l3d7la2t0g6kla3ldo6msnt5rj1r13kv][error][TypeError] TypeError: yii\web\User::login(): Argument #1 ($identity) must be of type yii\web\IdentityInterface, app\models\User given, called in W:\domains\localhost\blog\models\LoginForm.php on line 63 and defined in W:\domains\localhost\blog\vendor\yiisoft\yii2\web\User.php:256
+Stack trace:
+#0 W:\domains\localhost\blog\models\LoginForm.php(63): yii\web\User->login()
+#1 W:\domains\localhost\blog\controllers\SiteController.php(80): app\models\LoginForm->login()
+#2 [internal function]: app\controllers\SiteController->actionLogin()
+#3 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#4 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#5 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#6 W:\domains\localhost\blog\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#7 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#8 W:\domains\localhost\blog\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2025-02-19 12:03:00 [127.0.0.1][-][l3d7la2t0g6kla3ldo6msnt5rj1r13kv][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'GGco8LEQ126QIsZMZC9SlGvbg-Pl-KeJLLC1dqVEXHReCH-99SCEPvZUjT1UWTPxCa-1i9CW6fNY_oYG0AkJRA=='
+    'LoginForm' => [
+        'username' => '123'
+        'password' => '123'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'l3d7la2t0g6kla3ldo6msnt5rj1r13kv'
+    '_csrf' => '7f6e06ac9a130ac89b9726366925f584a491a57ada4af44c2c03a82b61a805bea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FoWMD0SPfvKq0vaebt6h5nNztN3puMU0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'blog'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'CONTENT_LENGTH' => '224'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://blog'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_REFERER' => 'http://blog/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-GB;q=0.8,en-US;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=l3d7la2t0g6kla3ldo6msnt5rj1r13kv; _csrf=7f6e06ac9a130ac89b9726366925f584a491a57ada4af44c2c03a82b61a805bea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FoWMD0SPfvKq0vaebt6h5nNztN3puMU0%22%3B%7D'
+    'PATH' => 'w:\\modules\\php\\PHP_8.1\\ext;w:\\modules\\php\\PHP_8.1\\pear;w:\\modules\\php\\PHP_8.1\\pear\\bin;w:\\modules\\php\\PHP_8.1;w:\\modules\\wget\\bin;w:\\modules\\database\\MariaDB-10.3\\bin;w:\\modules\\http\\Apache_2.4-PHP_8.0-8.1+Nginx_1.23\\bin;w:\\modules\\http\\Apache_2.4-PHP_8.0-8.1+Nginx_1.23;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'W:/domains/localhost/blog/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'W:/domains/localhost/blog/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'W:/domains/localhost/blog/web/index.php'
+    'REMOTE_PORT' => '55929'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1739955780.8889
+    'REQUEST_TIME' => 1739955780
+]2025-02-19 12:04:38 [127.0.0.1][-][l3d7la2t0g6kla3ldo6msnt5rj1r13kv][error][TypeError] TypeError: yii\web\User::login(): Argument #1 ($identity) must be of type yii\web\IdentityInterface, app\models\User given, called in W:\domains\localhost\blog\models\LoginForm.php on line 63 and defined in W:\domains\localhost\blog\vendor\yiisoft\yii2\web\User.php:256
+Stack trace:
+#0 W:\domains\localhost\blog\models\LoginForm.php(63): yii\web\User->login()
+#1 W:\domains\localhost\blog\controllers\SiteController.php(80): app\models\LoginForm->login()
+#2 [internal function]: app\controllers\SiteController->actionLogin()
+#3 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#4 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#5 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#6 W:\domains\localhost\blog\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#7 W:\domains\localhost\blog\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#8 W:\domains\localhost\blog\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2025-02-19 12:04:37 [127.0.0.1][-][l3d7la2t0g6kla3ldo6msnt5rj1r13kv][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'UYLMgdrq7pRPZG81VdEKtjCajxDoz1YRuMAVd2eCP1kX7ZvMntq9xCkSJERlp2vTUu65eN2hGGvMjiYHEs9qaQ=='
+    'LoginForm' => [
+        'username' => '123'
+        'password' => '123'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'l3d7la2t0g6kla3ldo6msnt5rj1r13kv'
+    '_csrf' => '7f6e06ac9a130ac89b9726366925f584a491a57ada4af44c2c03a82b61a805bea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FoWMD0SPfvKq0vaebt6h5nNztN3puMU0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'blog'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'CONTENT_LENGTH' => '224'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://blog'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_REFERER' => 'http://blog/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-GB;q=0.8,en-US;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=l3d7la2t0g6kla3ldo6msnt5rj1r13kv; _csrf=7f6e06ac9a130ac89b9726366925f584a491a57ada4af44c2c03a82b61a805bea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FoWMD0SPfvKq0vaebt6h5nNztN3puMU0%22%3B%7D'
+    'PATH' => 'w:\\modules\\php\\PHP_8.1\\ext;w:\\modules\\php\\PHP_8.1\\pear;w:\\modules\\php\\PHP_8.1\\pear\\bin;w:\\modules\\php\\PHP_8.1;w:\\modules\\wget\\bin;w:\\modules\\database\\MariaDB-10.3\\bin;w:\\modules\\http\\Apache_2.4-PHP_8.0-8.1+Nginx_1.23\\bin;w:\\modules\\http\\Apache_2.4-PHP_8.0-8.1+Nginx_1.23;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'W:/domains/localhost/blog/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'W:/domains/localhost/blog/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'W:/domains/localhost/blog/web/index.php'
+    'REMOTE_PORT' => '56382'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1739955877.9266
+    'REQUEST_TIME' => 1739955877
+]
